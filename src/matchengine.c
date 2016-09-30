@@ -212,6 +212,7 @@ static int matchbracketclass(UChar32 sc, UCharIterator* pPattIter, uint32_t endc
 					return sig;
 				}
 				uiter_next32(pPattIter);
+				break;
 			case ']':
 				status = U_ZERO_ERROR;
 				uiter_setState(pPattIter, restore_state, &status);
